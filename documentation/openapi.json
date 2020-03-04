@@ -1,0 +1,120 @@
+{
+   "swagger": "2.0",
+   "info": {
+      "description": "Record metrics on the usage of the data publication service",
+      "version": "2.0.0",
+      "title": "Dps Metric API"
+   },
+   "host": "localhost:8006",
+   "schemes": [
+      "http"
+   ],
+   "paths": {
+      "/v1/metric": {
+         "get": {
+            "description": "Get all users metrics",
+            "responses": {
+               "200": {
+                  "description": "OK"
+               }
+            }
+         }
+      },
+      "/v1/metric/{id}": {
+         "get": {
+            "description": "Get metric details for a user by id",
+            "responses": {
+               "200": {
+                  "description": "OK"
+               },
+               "404": {
+                  "description": "Case not found"
+               }
+            },
+            "parameters": [
+               {
+                  "in": "path",
+                  "name": "id",
+                  "required": true,
+                  "type": "string"
+               }
+            ]
+         }
+      },
+      "/v1/metric/": {
+         "post": {
+            "description": "Create a metric for a user",
+            "produces": [
+               "application/json"
+            ],
+            "parameters": [
+               {
+                  "in": "body",
+                  "name": "body",
+                  "required": true,
+                  "schema": {
+                     "type": "object",
+                     "example": {
+                        "user": {
+                           "ckan_user_id": "987-654-321-xyz",
+                           "user_type": "oversea-individual",
+                           "status": "Pending"
+                        },
+                        "activity": {
+                           "activity_type": "application_received",
+                           "dataset": null,
+                           "filename": null
+                        }
+                     }
+                  }
+               }
+            ],
+            "responses": {
+               "201": {
+                  "description": "Metric successfully created"
+               }
+            }
+         }
+      },
+      "/health": {
+         "get": {
+            "description": "Verify that the API is running",
+            "produces": [
+               "application/json"
+            ],
+            "responses": {
+               "200": {
+                  "description": "OK"
+               },
+               "404": {
+                  "description": "Not Found"
+               }
+            }
+         }
+      },
+      "/health/cascade/{depth}": {
+         "get": {
+            "description": "Verify that the API and all its dependencies are running",
+            "produces": [
+               "application/json"
+            ],
+            "parameters": [
+               {
+                  "in": "path",
+                  "name": "depth",
+                  "required": true,
+                  "type": "integer"
+               }
+            ],
+            "responses": {
+               "200": {
+                  "description": "OK"
+               },
+               "404": {
+                  "description": "Not found"
+               }
+            }
+         }
+      }
+   }
+}

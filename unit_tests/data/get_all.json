@@ -1,0 +1,83 @@
+{
+  "activity_metrics": [
+    {
+      "activity_id": 1,
+      "activity_type": "application_received",
+      "ckan_user_id": "987-654-321-xyz",
+      "dataset": null,
+      "date_added": "2019-07-02 13:30:52.807605+00:00",
+      "filename": null
+    },
+    {
+      "activity_id": 2,
+      "activity_type": "application_received",
+      "ckan_user_id": "123-654-321-xyz",
+      "dataset": null,
+      "date_added": "2019-07-02 14:20:25.976479+00:00",
+      "filename": null
+    },
+    {
+      "activity_id": 3,
+      "activity_type": "Dst approved",
+      "ckan_user_id": "123-654-321-xyz",
+      "dataset": null,
+      "date_added": "2019-07-02 15:01:47.147109+00:00",
+      "filename": null
+    },
+    {
+      "activity_id": 4,
+      "activity_type": "Download",
+      "ckan_user_id": "123-654-321-xyz",
+      "dataset": "CCOD",
+      "date_added": "2019-07-02 15:03:22.378190+00:00",
+      "filename": "CCOD"
+    },
+    {
+      "activity_id": 5,
+      "activity_type": "Download",
+      "ckan_user_id": "123-654-321-xyz",
+      "dataset": "CCOD",
+      "date_added": "2019-07-02 15:04:27.938142+00:00",
+      "filename": "CCOD"
+    },
+    {
+      "activity_id": 6,
+      "activity_type": "Download",
+      "ckan_user_id": "123-654-321-xyz",
+      "dataset": "CCOD",
+      "date_added": "2019-07-02 15:04:30.192267+00:00",
+      "filename": "CCOD"
+    },
+    {
+      "activity_id": 7,
+      "activity_type": "Download",
+      "ckan_user_id": "123-654-321-xyz",
+      "dataset": "CCOD",
+      "date_added": "2019-07-02 15:05:54.252821+00:00",
+      "filename": "CCOD"
+    }
+  ],
+  "user_metrics": [
+    {
+      "ckan_user_id": "987-654-321-xyz",
+      "date_added": "2019-07-02 13:30:52.810057+00:00",
+      "status": "Pending",
+      "user_id": 1,
+      "user_type": "oversea-individual"
+    },
+    {
+      "ckan_user_id": "123-654-321-xyz",
+      "date_added": "2019-07-02 14:20:25.974766+00:00",
+      "status": "Pending",
+      "user_id": 2,
+      "user_type": "oversea-individual"
+    },
+    {
+      "ckan_user_id": "123-654-321-xyz",
+      "date_added": "2019-07-02 15:01:47.148701+00:00",
+      "status": "Approved",
+      "user_id": 3,
+      "user_type": "oversea-individual"
+    }
+  ]
+}

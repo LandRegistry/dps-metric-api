@@ -1,0 +1,12 @@
+{
+  "user": {
+    "ckan_user_id": "123-654-321-xyz",
+    "user_type": "oversea-individual",
+    "status": "Pending"
+  },
+  "activity": {
+    "activity_type": "application_received",
+    "dataset": null,
+    "filename": null
+  }
+}
